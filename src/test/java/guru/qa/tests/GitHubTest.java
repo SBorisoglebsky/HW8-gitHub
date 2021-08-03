@@ -30,7 +30,7 @@ public class GitHubTest {
         $(linkText(REPOSITORY)).click();
 
         $(".js-repo-nav").find(byText("Issues")).click();
-        //проверка, что вкладка существет
+        //проверка, что вкладка существует
         $("span[data-content='Issues']").shouldBe(visible);
         //Проверка искомого ISSUE_NAME
         $$("div[aria-label='Issues']").findBy(text(ISSUE_NAME)).shouldBe(visible);
